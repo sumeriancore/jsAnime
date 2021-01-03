@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Четыре правила вёрстки</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image" href="https://code.s3.yandex.net/web-code/rules-favicon.ico">
+</head>
+<body>
+  <div>
+    <div id="block">
+      <p class="letter">X</p>
+    </div>
+  
+    <div id="block2">
+      <p class="letter">И</p>
+    </div>
+
+    <div id="block3">
+      <p class="letter">М</p>
+    </div>
+
+    <div id="block4">
+      <p class="letter">И</p>
+    </div>
+
+    <div id="block5">
+      <p class="letter">Я</p>
+    </div>
+  </div>
+
+  <script src="node_modules/animejs/lib/anime.min.js"></script>
+  <script>
+    var elements = document.querySelectorAll('div');
+    console.log(elements);
+      anime({
+        targets: elements,
+        translateX: anime.stagger(50),
+        autoplay: true,
+        easing: 'easeInOutSine'
+      });
+
+      
+  </script>
+  
+</body>
+</html>
